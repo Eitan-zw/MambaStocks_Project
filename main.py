@@ -119,6 +119,7 @@ trainy = ratechg[:-args.n_test]
 predictions = PredictWithData(trainX, trainy, testX)
 time = data['Date'][-args.n_test:]
 #time = time[1:]
+#test change
 data1 = close[-args.n_test:]
 finalpredicted_stock_price = []
 pred = close[-args.n_test-1]
