@@ -1,6 +1,16 @@
 # MambaStockz: Selective state space model for stock prediction
 
 Mamba is a deep learning architechure developed by Albert Gu and Tri Dao unvieled in 2023. The Mamba Stockz is a novel implementation of Mamba to the field of stock prediction. Taking a stock of your choosing, dividing the data to train and test and creating an accurate prediciton. 
+paper: https://arxiv.org/abs/2312.00752
+
+## Backround
+This project introduces our mamba implementation for stock prediction, a stock prediction model based on the Mamba framework. we use historical market data without relying on handcrafted features or extensive preprossessing, offering great predictive performance. Empirical evaluations across multiple stocks demonstrate its accuracy. This work underscores the efficacy of the Mamba approach in time-series forecasting. 
+
+## Files
+stockz.py -> code to data mine financial data
+training.py -> train the model on particular stock data with your desired argument changes
+testing.py -> test the model trained on the stock of your choosing
+model.py -> the model architechure
 
 ## Requirements
 
