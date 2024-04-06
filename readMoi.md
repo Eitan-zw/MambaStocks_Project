@@ -55,7 +55,7 @@ Training the model on AAPL stock produced the results shown in Figures 1 and 2. 
 
 To assess the model's generalization capability, we tested the trained model on predicting another stock, NKE (Nike). Figure 3 depicts the prediction results using the AAPL-trained model on NKE stock data.
 
-![NKE Prediction Using AAPL Trained Model](images/nke_stock_n_100.jpg)
+![NKE Prediction Using AAPL Trained Model](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/nke%20stock%20n%3D100.jpg)
 *Figure 3: NKE Prediction Using AAPL Trained Model*
 
 ## Usage
