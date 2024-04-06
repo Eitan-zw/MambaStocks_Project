@@ -45,10 +45,10 @@ In an example scenario with Apple stock, historical data from 1986 to 2024 is do
 
 Training the model on AAPL stock produced the results shown in Figures 1 and 2. Figure 1 illustrates the AAPL stock prediction result, while Figure 2 displays the loss during training.
 
-![AAPL Stock Prediction Result](images/apple_stock_n_100.jpg)
+![AAPL Stock Prediction Result](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/apple%20stock%20n%3D100.jpg)
 *Figure 1: AAPL Stock Prediction Result*
 
-![Loss When Training - AAPL](images/epoch_vs_loss_40_epoch.jpg)
+![Loss When Training - AAPL](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/epoch%20vs%20loss%2040%20epoch.jpg)
 *Figure 2: Loss When Training - AAPL*
 
 ### Cross-Stock Prediction
