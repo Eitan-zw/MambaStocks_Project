@@ -2,6 +2,9 @@
 
 Welcome to our Mamba Stock Prediction project! Here, we harness the power of the Mamba architecture to forecast stock prices accurately. By analyzing historical market data and employing innovative techniques, we demonstrate the effectiveness of Mamba in predicting future stock behavior. Explore our project as we delve into the realm of stock market forecasting with Mamba :)
 
+![Image Description](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/_11520c05-2fec-40dc-9263-98494b359cb9.jpeg)
+
+
 ## Data Processing
 
 Our data processing begins with the `stockz.py` script, a versatile tool for fetching historical stock data from Yahoo Finance. This script extracts vital metrics like opening and closing prices, high and low prices, adjusted close, and trading volume.
