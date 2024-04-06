@@ -23,3 +23,39 @@ In our implementation, we adapted the Mamba model for stock prediction by integr
 The Mamba-based model comprises essential components such as residual blocks, selective scanning algorithms, and input-dependent parameter modulation. These elements collectively enable the model to capture intricate patterns in stock price data while ensuring computational efficiency and predictive accuracy.
 
 For further details on the Mamba framework and its implementation, we recommend referring to the original research papers and the annotated code available in the [Mamba](https://github.com/state-spaces/mamba) repository.
+
+## Requirements
+
+The code has been tested running under Python 3.12, with the following packages and their dependencies installed:
+```
+numpy==1.26.4
+matplotlib==3.8.3
+scikit-learn==1.4.1.post1
+pandas==2.2.1
+pytorch==1.7.1
+```
+
+## Usage
+
+```
+stockz.py -> run and input the required stock data
+training.py -> change the parsing to allow for your desired stock data to be trained on, for example (aapl_stock_data).the model will be save in model.pt.
+testing.py -> run with the relevant model.pth + stock_data file
+```
+
+## Options
+```
+parser = argparse.ArgumentParser()
+parser.add_argument('--use-cuda', default=False, help='Enable CUDA training.')
+parser.add_argument('--seed', type=int, default=1, help='Random seed.')
+parser.add_argument('--epochs', type=int, default=40, help='Number of epochs to train.')
+parser.add_argument('--lr', type=float, default=0.01, help='Learning rate.')
+parser.add_argument('--wd', type=float, default=1e-5, help='Weight decay (L2 loss on parameters).')
+parser.add_argument('--hidden', type=int, default=2, help='Dimension of representations.')
+parser.add_argument('--layer', type=int, default=8, help='Number of layers.')
+parser.add_argument('--n-test', type=int, default=300, help='Size of test set.')
+parser.add_argument('--ts-code', type=str, default='aapl_stock_data', help='Stock code.')
+parser.add_argument('--csv-path', type=str, default='dimensions.csv', help='Path to save dimensions.')
+args = parser.parse_args()
+args.cuda = args.use_cuda and torch.cuda.is_available()
+```
