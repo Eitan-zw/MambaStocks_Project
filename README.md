@@ -34,7 +34,7 @@ For further details on the Mamba framework and its implementation, we recommend 
 
 ## Requirements
 
-The code has been tested running under Python 3.12, with the following packages and their dependencies installed:
+The code has been tested running on Python version 3.12, with the following packages and their dependencies installed:
 ```
 numpy==1.26.4
 matplotlib==3.8.3
