@@ -1,4 +1,4 @@
-https://www.overleaf.com/project/6607e47d29649c18c82394e3/file/6607edd729649c18c8254af9![image](https://github.com/Eitan-zw/MambaStocks_Project/assets/113341170/9d967fbb-b3c2-44c3-b3c6-d1dea75cbc80)
+
 
 # MambaStockz: Selective state space model for stock prediction
 
