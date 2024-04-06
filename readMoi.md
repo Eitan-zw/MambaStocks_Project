@@ -17,6 +17,11 @@ During model training, we meticulously select the most relevant features while r
 
 Our stock prediction model is built upon the Mamba framework, specifically leveraging the lightweight implementation available in [mamba-minimal](https://github.com/johnma2006/mamba-minimal). This simplified version encapsulates the essence of Mamba's state space modeling in a single PyTorch file.
 
+![Mamba](https://github.com/state-spaces/mamba/blob/main/assets/selection.png)
+> **Mamba: Linear-Time Sequence Modeling with Selective State Spaces**\
+> Albert Gu*, Tri Dao*\
+> Paper: https://arxiv.org/abs/2312.00752
+
 ### Model Overview
 
 In our implementation, we adapted the Mamba model for stock prediction by integrating it with our custom features and requirements. One notable modification was the removal of the vocabulary embedding layer, aligning the model's architecture with our numerical data processing pipeline.
@@ -46,17 +51,17 @@ In an example scenario with Apple stock, historical data from 1986 to 2024 is do
 Training the model on AAPL stock produced the results shown in Figures 1 and 2. Figure 1 illustrates the AAPL stock prediction result, while Figure 2 displays the loss during training.
 
 ![AAPL Stock Prediction Result](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/apple%20stock%20n%3D100.jpg)
-*Figure 1: AAPL Stock Prediction Result*
+                                *Figure 1: AAPL Stock Prediction Result*
 
 ![Loss When Training - AAPL](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/epoch%20vs%20loss%2040%20epoch.jpg)
-*Figure 2: Loss When Training - AAPL*
+                                *Figure 2: Loss When Training - AAPL*
 
 ### Cross-Stock Prediction
 
 To assess the model's generalization capability, we tested the trained model on predicting another stock, NKE (Nike). Figure 3 depicts the prediction results using the AAPL-trained model on NKE stock data.
 
 ![NKE Prediction Using AAPL Trained Model](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/nke%20stock%20n%3D100.jpg)
-*Figure 3: NKE Prediction Using AAPL Trained Model*
+                                *Figure 3: NKE Prediction Using AAPL Trained Model*
 
 ## Usage
 
