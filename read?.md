@@ -34,6 +34,26 @@ scikit-learn==1.4.1.post1
 pandas==2.2.1
 pytorch==1.7.1
 ```
+## Results
+
+### Example Scenario: Apple Stock
+
+In an example scenario with Apple stock, historical data from 1986 to 2024 is downloaded and processed. The model is trained using MSE loss optimization and RMSprop as the optimizer.
+
+Training the model on AAPL stock produced the results shown in Figures 1 and 2. Figure 1 illustrates the AAPL stock prediction result, while Figure 2 displays the loss during training.
+
+![AAPL Stock Prediction Result](images/apple_stock_n_100.jpg)
+*Figure 1: AAPL Stock Prediction Result*
+
+![Loss When Training - AAPL](images/epoch_vs_loss_40_epoch.jpg)
+*Figure 2: Loss When Training - AAPL*
+
+### Cross-Stock Prediction
+
+To assess the model's generalization capability, we tested the trained model on predicting another stock, NKE (Nike). Figure 3 depicts the prediction results using the AAPL-trained model on NKE stock data.
+
+![NKE Prediction Using AAPL Trained Model](images/nke_stock_n_100.jpg)
+*Figure 3: NKE Prediction Using AAPL Trained Model*
 
 ## Usage
 
@@ -42,6 +62,14 @@ stockz.py -> run and input the required stock data
 training.py -> change the parsing to allow for your desired stock data to be trained on, for example (aapl_stock_data).the model will be save in model.pt.
 testing.py -> run with the relevant model.pth + stock_data file
 ```
+## Further Work
+
+### Trading Bot Integration
+Consider integrating a trading bot to automate trading decisions based on the predicted stock prices. One such trading bot project is available [here](https://github.com/roeeben/Stock-Price-Prediction-With-a-Bot). Integrating the trained model with a trading bot could potentially enable automated trading strategies based on the predicted stock prices.
+
+### Prediction for Future Trading Days
+Extend the functionality of the prediction model to forecast stock prices for future trading days. This enhancement would involve modifying the code to accommodate predictions beyond the testing period. Implementing this feature would enable users to make informed decisions about potential future stock price movements, even in the absence of typical feature information.
+
 
 ## Options
 ```
