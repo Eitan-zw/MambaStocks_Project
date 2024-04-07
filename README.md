@@ -44,27 +44,6 @@ scikit-learn==1.4.1.post1
 pandas==2.2.1
 pytorch==1.7.1
 ```
-## Results
-
-### Example Scenario: Apple Stock
-
-In an example scenario with Apple stock, historical data from 1986 to 2024 is downloaded and processed. The model is trained using MSE loss optimization and RMSprop as the optimizer.
-
-Training the model on AAPL stock produced the results shown in Figures 1 and 2. Figure 1 illustrates the AAPL stock prediction result, while Figure 2 displays the loss during training.
-
-![AAPL Stock Prediction Result](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/apple%20stock%20n%3D100.jpg)
-                                *Figure 1: AAPL Stock Prediction Result*
-
-![Loss When Training - AAPL](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/epoch%20vs%20loss%2040%20epoch.jpg)
-                                *Figure 2: Loss When Training - AAPL*
-
-### Cross-Stock Prediction
-
-To assess the model's generalization capability, we tested the trained model on predicting another stock, NKE (Nike). Figure 3 depicts the prediction results using the AAPL-trained model on NKE stock data.
-
-![NKE Prediction Using AAPL Trained Model](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/nke%20stock%20n%3D100.jpg)
-                                *Figure 3: NKE Prediction Using AAPL Trained Model*
-
 ## Usage
 
 ```
@@ -89,3 +68,25 @@ parser.add_argument('--csv-path', type=str, default='dimensions.csv', help='Path
 args = parser.parse_args()
 args.cuda = args.use_cuda and torch.cuda.is_available()
 ```
+
+## Results
+
+### Example Scenario: Apple Stock
+
+In an example scenario with Apple stock, historical data from 1986 to 2024 is downloaded and processed. The model is trained using MSE loss optimization and RMSprop as the optimizer.
+
+Training the model on AAPL stock produced the results shown in Figures 1 and 2. Figure 1 illustrates the AAPL stock prediction result, while Figure 2 displays the loss during training.
+
+![AAPL Stock Prediction Result](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/apple%20stock%20n%3D100.jpg)
+                                *Figure 1: AAPL Stock Prediction Result*
+
+![Loss When Training - AAPL](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/epoch%20vs%20loss%2040%20epoch.jpg)
+                                *Figure 2: Loss When Training - AAPL*
+
+### Cross-Stock Prediction
+
+To assess the model's generalization capability, we tested the trained model on predicting another stock, NKE (Nike). Figure 3 depicts the prediction results using the AAPL-trained model on NKE stock data.
+
+![NKE Prediction Using AAPL Trained Model](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/nke%20stock%20n%3D100.jpg)
+                                *Figure 3: NKE Prediction Using AAPL Trained Model*
+
