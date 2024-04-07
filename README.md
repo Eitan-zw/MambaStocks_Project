@@ -134,7 +134,7 @@ To assess the model's generalization capability, we tested the trained model on 
 
 1. [Mamba: Linear-Time Sequence Modeling with Selective State Spaces Albert Gu and TriDao](https://arxiv.org/ftp/arxiv/papers/2312/2312.00752.pdf)
 2. [Mamba: Redefining Sequence Modeling and Outforming Transformers Architecture](https://www.unite.ai/mamba-redefining-sequence-modeling-and-outforming-transformers-architecture/)
-3.[Structured State Spaces: Combining Continuous-Time, Recurrent, and Convolutional Models](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-3)
+3. [Structured State Spaces: Combining Continuous-Time, Recurrent, and Convolutional Models](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-3)
 4. [Mamba: The Easy Way](https://jackcook.com/2024/02/23/mamba.html)
 5. [A Survey of Forex and Stock Price Prediction Using Deep Learning](https://arxiv.org/ftp/arxiv/papers/2103/2103.09750.pdf)
 6. [mamba-minimal](https://github.com/johnma2006/mamba-minimal)
