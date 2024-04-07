@@ -2,6 +2,8 @@
 
 Welcome to our Mamba Stock Prediction project! Here, we harness the power of the Mamba architecture to forecast stock prices accurately. By analyzing historical market data and employing innovative techniques, we demonstrate the effectiveness of Mamba in predicting future stock behavior. Explore our project as we delve into the realm of stock market forecasting with Mamba :)
 
+Video Presentation: https://youtu.be/pZW4XnBDX3M
+
 ![Image Description](https://github.com/Eitan-zw/MambaStocks_Project/blob/master/_11520c05-2fec-40dc-9263-98494b359cb9.jpeg)
 
 
@@ -70,14 +72,6 @@ stockz.py -> run and input the required stock data
 training.py -> change the parsing to allow for your desired stock data to be trained on, for example (aapl_stock_data).the model will be save in model.pt.
 testing.py -> run with the relevant model.pth + stock_data file
 ```
-## Further Work
-
-### Trading Bot Integration
-Consider integrating a trading bot to automate trading decisions based on the predicted stock prices. One such trading bot project is available [here](https://github.com/roeeben/Stock-Price-Prediction-With-a-Bot). Integrating the trained model with a trading bot could potentially enable automated trading strategies based on the predicted stock prices.
-
-### Prediction for Future Trading Days
-Extend the functionality of the prediction model to forecast stock prices for future trading days. This enhancement would involve modifying the code to accommodate predictions beyond the testing period. Implementing this feature would enable users to make informed decisions about potential future stock price movements, even in the absence of typical feature information.
-
 
 ## Options
 ```
