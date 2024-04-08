@@ -138,4 +138,5 @@ To assess the model's generalization capability, we tested the trained model on 
 4. [Mamba: The Easy Way](https://jackcook.com/2024/02/23/mamba.html)
 5. [A Survey of Forex and Stock Price Prediction Using Deep Learning](https://arxiv.org/ftp/arxiv/papers/2103/2103.09750.pdf)
 6. [mamba-minimal](https://github.com/johnma2006/mamba-minimal)
-7. [Mamba](https://github.com/state-spaces/mamba)
+7. [MambaStock](https://github.com/zshicode/MambaStock?tab=readme-ov-file)
+8. [Mamba](https://github.com/state-spaces/mamba)
